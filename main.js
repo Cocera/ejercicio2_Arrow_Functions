@@ -122,7 +122,7 @@ const resultMultiply = numeros.reduce((a, b) => a*b);
 console.log(resultMultiply);
 
 
-// EXTRA
+// EXTRA MAP 1
 
 const staff = [
     {
@@ -149,3 +149,21 @@ const staff = [
 
 const staffStrings = staff.map((person) => `${person.name} es ${person.role} y le gusta ${person.hobbies[0]} y ${person.hobbies[1]}`);
 console.log(staffStrings);
+
+// EXTRA MAP 2
+
+const foodList2 = ["Pizza", "Ramen", "Paella", "Entrecot"];
+const foodStrings = foodList2.map((food) => {
+    if (food == "Pizza") {
+        return `Como soy de Italia, amo comer ${food}`;
+    } else if (food == "Ramen") {
+        return `Como soy de Japón, amo comer ${food}`;
+    } else if (food == "Paella") {
+        return `Como soy de Valencia, amo comer ${food}`;
+    } else {
+        return `Aunque no como carne, el ${food} es sabroso`;
+    };
+});
+console.log(foodStrings);
+
+// EXTRA FILTER 
