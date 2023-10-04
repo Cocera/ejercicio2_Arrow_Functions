@@ -206,6 +206,6 @@ const sentenceElements = [
     'javascript'
 ];
 
-const elementsUnited = sentenceElements.reduce((a, b) => a + b);
-console.log(sentenceElements);
+const elementsUnited = sentenceElements.reduce((a, b) => a + " " + b);
+console.log(elementsUnited);
 
