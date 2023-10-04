@@ -114,11 +114,13 @@ const veganFood = foodList.filter(plato => plato.isVeggie === true).forEach(plat
     console.log(`Que rico ${plato.name} me voy a comer!`)
 });
 
+
 // 5 EJERCICIO
 
+const numeros = [39, 2, 4, 25, 62];
+const resultMultiply = numeros.reduce((a, b) => a*b);
+console.log(resultMultiply);
 
 
-
-
-
+// EXTRA
 
