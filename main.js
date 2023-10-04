@@ -115,7 +115,7 @@ const veganFood = foodList.filter(plato => plato.isVeggie === true).forEach(plat
 });
 
 
-// 5 EJERCICIO
+// 5 EJERCICIO REDUCE
 
 const numeros = [39, 2, 4, 25, 62];
 const resultMultiply = numeros.reduce((a, b) => a*b);
@@ -167,3 +167,45 @@ const foodStrings = foodList2.map((food) => {
 console.log(foodStrings);
 
 // EXTRA FILTER 
+
+const inventory = [
+    {
+      name: 'Mobile phone',
+      price: 199
+    },
+    {
+      name: 'TV Samsung',
+      price: 459
+    },
+    {
+      name: 'Viaje a cancún',
+      price: 600
+    },
+    {
+      name: 'Mascarilla',
+      price: 1
+    }
+];
+
+const expensiveInventory = inventory.filter(item => item.price>=300);
+console.log(expensiveInventory);
+
+
+// EXTRA REDUCE ---- INACABADO
+
+const sentenceElements = [
+    'Me',
+    'llamo',
+    'Álvaro',
+    'y',
+    'quiero',
+    'sentir',
+    'la',
+    'fuerza',
+    'con',
+    'javascript'
+];
+
+const elementsUnited = sentenceElements.reduce((a, b) => a + b);
+console.log(sentenceElements);
+
