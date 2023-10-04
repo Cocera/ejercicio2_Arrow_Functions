@@ -124,3 +124,28 @@ console.log(resultMultiply);
 
 // EXTRA
 
+const staff = [
+    {
+      name: "Pepe",
+      role: "The Boss",
+      hobbies: ["leer", "ver pelis"],
+    },
+    {
+      name: "Ana",
+      role: "becaria",
+      hobbies: ["nadar", "bailar"],
+    },
+    {
+      name: "Luis",
+      role: "programador",
+      hobbies: ["dormir", "comprar"],
+    },
+    {
+      name: "Carlos",
+      role: "secretario",
+      hobbies: ["futbol", "queso"],
+    },
+  ];
+
+const staffStrings = staff.map((person) => `${person.name} es ${person.role} y le gusta ${person.hobbies[0]} y ${person.hobbies[1]}`);
+console.log(staffStrings);
