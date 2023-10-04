@@ -75,7 +75,48 @@ console.log(startsWithJ);
 
 
 // 3 EJERCICIO MAP
-const mapOlder25 = gente.map() 
+
+const mapOlder25 = gente.map((user) => {
+    if (user.edad > 25) {
+        return user;
+    }; 
+});
+console.log(mapOlder25);
+
+const mapWithJ = gente.map((user) => {
+    if (user.nombre.startsWith("J")) {
+        return user;
+    };  
+}); 
+console.log(mapWithJ);
+
+const numbers = [4, 5, 6, 7, 8, 9, 10];
+const numbersElevados = numbers.map((number) => {
+    return number**number
+});
+console.log(numbersElevados);
+
+
+// 4 EJERCICIO FILTER
+
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbersOdd = numbers2.filter(number => number%2 !== 0);
+console.log(numbersOdd);
+
+const foodList = [
+    { name: 'Tempeh', isVeggie: true },
+    { name: 'Cheesbacon burguer', isVeggie: false },
+    { name: 'Tofu burguer', isVeggie: true },
+    { name: 'Entrecot', isVeggie: false }
+  ];
+
+const veganFood = foodList.filter(plato => plato.isVeggie === true).forEach(plato => {
+    console.log(`Que rico ${plato.name} me voy a comer!`)
+});
+
+// 5 EJERCICIO
+
+
 
 
 
