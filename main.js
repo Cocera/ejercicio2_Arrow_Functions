@@ -191,7 +191,7 @@ const expensiveInventory = inventory.filter(item => item.price>=300);
 console.log(expensiveInventory);
 
 
-// EXTRA REDUCE ---- INACABADO
+// EXTRA REDUCE
 
 const sentenceElements = [
     'Me',
