@@ -186,7 +186,7 @@ const inventory = [
     }
 ];
 
-const expensiveInventory = inventory.filter(item => item.price>=300);
+const expensiveInventory = inventory.filter(item => item.price>=300).map((item) => item.name);
 console.log(expensiveInventory);
 
 
