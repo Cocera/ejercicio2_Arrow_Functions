@@ -7,7 +7,7 @@ console.log(saludar());
 const division = (a, b) => a / b;
 console.log(division(20, 10));
 
-const miNombre = (nombre) => `Mi nombre es ${nombre}`;
+const miNombre = (nombre) => `Mi nombre es ${nombre}`; // Template literal
 console.log(miNombre("Carlos"));
 console.log(miNombre("Francesc"));
 
@@ -100,7 +100,7 @@ console.log(numbersElevados);
 // 4 EJERCICIO FILTER
 
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const numbersOdd = numbers2.filter(number => number%2 !== 0);
+const numbersOdd = numbers2.filter(number => number%2 != 0);
 console.log(numbersOdd);
 
 const foodList = [
@@ -110,9 +110,8 @@ const foodList = [
     { name: 'Entrecot', isVeggie: false }
   ];
 
-const veganFood = foodList.filter(plato => plato.isVeggie === true).forEach(plato => {
-    console.log(`Que rico ${plato.name} me voy a comer!`)
-});
+const veganFood = foodList.filter(plato => plato.isVeggie === true).map((plato) => `Que rico ${plato.name} me voy a comer!`);
+console.log(veganFood);
 
 
 // 5 EJERCICIO REDUCE
